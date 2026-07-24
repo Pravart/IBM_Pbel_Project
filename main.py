@@ -8,11 +8,13 @@ import time
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
+
 # ==========================================
 # Load Environment Variables
 # ==========================================
 load_dotenv()
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=api_key)
 
 # ==========================================
 # Load FAISS
