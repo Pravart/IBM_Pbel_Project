@@ -15,19 +15,18 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 load_dotenv()
 
 # Load API key
-api_key = os.getenv("GEMINI_API_KEY")
-
 try:
     api_key = st.secrets["GEMINI_API_KEY"]
 except Exception:
-    pass
+    api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
     st.error("GEMINI_API_KEY not found!")
     st.stop()
 
 # Gemini client
-client = genai.Client(api_key=api_key)
+genai.configure(api_key=api_key)
+model = genai.GenerativeModel("gemini-3-flash-preview")
 
 # ==========================================
 # Load FAISS
@@ -187,9 +186,7 @@ Question:
     for attempt in range(3):
 
         try:
-            response = client.models.generate_content(
-                model="gemini-3-flash-preview",
-                contents=gemini_prompt)
+            response = model.generate_content(gemini_prompt)
 
             break
         except Exception as e:
@@ -224,9 +221,7 @@ if flashcard:
         st.warning("Please ask a question first.")
     else:
         try:
-            flash_response = client.models.generate_content(
-                model="gemini-3-flash-preview",
-                contents=f"""
+            flash_response = model.generate_content(f"""
 You are an AI Study Assistant.
 The user asked:
 {prompt}
