@@ -1,0 +1,13 @@
+streamlit==1.60.0
+google-generativeai==0.8.6
+python-dotenv==1.2.2
+pandas==2.2.3
+
+langchain==0.3.26
+langchain-community==0.3.27
+langchain-core==0.3.86
+langchain-google-genai==2.0.10
+
+faiss-cpu==1.14.3
+numpy==2.2.3
+pypdf==6.14.2
