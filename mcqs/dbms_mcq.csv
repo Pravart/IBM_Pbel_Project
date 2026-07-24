@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+Which normal form removes partial functional dependencies?,1NF,2NF,3NF,BCNF,B
+Which normal form removes transitive functional dependencies?,1NF,2NF,3NF,BCNF,C
+"A table is in BCNF if for every functional dependency X -> Y, X is a:",Candidate Key,Super Key,Foreign Key,Primary Key,B
+Which language is used to define database schema and tables?,DML,DDL,DCL,TCL,B
+"Which language is used to manipulate data within tables (e.g., INSERT, UPDATE, DELETE)?",DDL,DML,DCL,TCL,B
+Which command is used to revoke privileges from users in SQL?,REMOVE,REVOKE,GRANT,DELETE,B
+"In ACID properties of a transaction, what does 'A' stand for?",Atomicity,Availability,Authenticity,Accuracy,A
+"In ACID properties of a transaction, what does 'C' stand for?",Concurrency,Consistency,Consistency & Isolation,Completeness,B
+"In ACID properties of a transaction, what does 'I' stand for?",Integrity,Isolation,Immutability,Indexing,B
+"In ACID properties of a transaction, what does 'D' stand for?",Durability,Dependability,Distribution,Data integrity,A
+Which index determines the physical order of data rows on disk?,Non-clustered Index,Clustered Index,Secondary Index,Hash Index,B
+How many clustered indexes can a single table have in SQL databases?,0,1,Multiple,Unlimited,B
+Which join returns only rows where there is a match in both tables?,Left Join,Right Join,Inner Join,Full Outer Join,C
+Which join returns all rows from the left table and matching rows from the right table?,Inner Join,Left Outer Join,Right Outer Join,Cross Join,B
+Which relational algebra operation selects rows that satisfy a specified predicate?,Projection (π),Selection (σ),Cartesian Product (×),Join (⋈),B
+Which relational algebra operation chooses specified columns from a table?,Selection (σ),Projection (π),Union (∪),Intersection (∩),B
+What SQL clause is used to filter groups created by GROUP BY?,WHERE,HAVING,ORDER BY,FILTER,B
+What is a foreign key?,A key that uniquely identifies a row in its own table,A field in one table that uniquely identifies a row in another table,A key generated automatically by the database,An encrypted key for secure access,B
+"Which property ensures that once a transaction commits, its changes survive system crashes?",Atomicity,Consistency,Isolation,Durability,D
+What is a candidate key?,A key chosen to uniquely identify tuples,A minimal super key,A foreign key in another table,An index key,B
+What is the primary key?,Any candidate key,A selected candidate key that uniquely identifies records and cannot be NULL,A non-unique secondary index,A key containing foreign references,B
+What happens during a deadlock in transaction processing?,Transactions complete sequentially,Two or more transactions wait indefinitely for locks held by each other,Data is corrupted automatically,All transactions commit simultaneously,B
+Which technique is commonly used to prevent deadlocks in DBMS?,Wait-Die or Wound-Wait schemes,Disabling indexing,Increasing transaction speed,Using only non-clustered indexes,A
+What is a phantom read problem in transaction concurrency?,Reading uncommitted changes made by another transaction,Reading different values for the same record during a transaction,A transaction re-executes a query and finds additional rows added by a committed transaction,Failing to read primary keys,C
+"Which transaction isolation level prevents dirty reads, non-repeatable reads, and phantom reads?",Read Uncommitted,Read Committed,Repeatable Read,Serializable,D
+Which transaction isolation level allows dirty reads?,Read Uncommitted,Read Committed,Repeatable Read,Serializable,A
+What type of lock allows concurrent read operations but blocks write operations?,Shared Lock (S-lock),Exclusive Lock (X-lock),Update Lock,Intent Lock,A
+What type of lock prevents all other transactions from both reading and writing?,Shared Lock,Exclusive Lock,Intent Shared Lock,Optimistic Lock,B
+"In Two-Phase Locking (2PL) protocol, what happens during the growing phase?",Locks are only released,Locks are acquired and no locks are released,Transactions commit,Locks are upgraded to master locks,B
+What does Strict 2PL guarantee?,No deadlocks can occur,Cascade-less schedules (prevents cascading rollbacks),Faster execution,Zero index usage,B
+What is a primary difference between SQL (RDBMS) and NoSQL databases?,"SQL is non-relational, NoSQL is relational","SQL databases are generally table-based and structured; NoSQL can be document, key-value, graph, or column-based",NoSQL does not support queries,SQL cannot scale horizontally,B
+Which operation represents Cartesian product of two relations R and S?,R ∪ S,R ∩ S,R × S,R ⋈ S,C
+What is functional dependency X -> Y?,X uniquely determines Y,Y uniquely determines X,X and Y are independent,X is a subset of Y,A
+Lossless-join decomposition ensures that:,No attributes are lost during normalization,Joining decomposed relations yields exactly the original relation without extra spurious tuples,No foreign keys are created,Data redundancy is 100%,B
+Which normal form is based on the concept of full functional dependency?,1NF,2NF,3NF,4NF,B
+4NF is designed to handle which type of dependency?,Partial dependency,Transitive dependency,Multivalued dependency,Join dependency,C
+5NF is designed to eliminate:,Partial dependencies,Transitive dependencies,Multivalued dependencies,Join dependencies,D
+Which database lock granularity locks individual rows of a table?,Database-level lock,Table-level lock,Page-level lock,Row-level lock,D
+What is a view in SQL?,A physical copy of table data,A virtual table based on the result-set of an SQL statement,An index structure,A stored procedure parameter,B
+What is a trigger in DBMS?,A backup script,A procedural code that automatically executes in response to certain events on a table,A type of database index,A locking mechanism,B
+What is a stored procedure?,A precompiled collection of SQL statements stored in the database,A backup log file,A query execution plan,A secondary index file,A
+Which command removes all records from a table without logging individual row deletions?,DELETE,TRUNCATE,DROP,REMOVE,B
+What is the main difference between TRUNCATE and DROP?,TRUNCATE deletes rows; DROP deletes the entire table structure and data,TRUNCATE can be rolled back always; DROP cannot,TRUNCATE is DML; DROP is TCL,There is no difference,A
+Which index data structure is most commonly used in RDBMS for range queries?,Hash Index,B+ Tree Index,Binary Search Tree,Heap File,B
+Why are B+ Trees preferred over B Trees for database indexing?,"B+ Trees store data pointers only in leaf nodes, allowing more keys per internal node and faster range scans",B+ Trees are simpler to implement,B+ Trees use less RAM,B Trees cannot handle text data,A
+What is a dirty read in database transactions?,Reading data that has been modified by an uncommitted transaction,Reading data that was deleted long ago,Reading corrupted disk blocks,Reading unindexed tables,A
+What is a non-repeatable read?,A transaction reads the same row twice and finds different data because another committed transaction updated it,A transaction fails to read a primary key,Reading uncommitted updates,A query returning duplicate rows,A
+"Which schedule property ensures that if transaction T2 reads data written by T1, T1 commits before T2 commits?",Serializable schedule,Recoverable schedule,Strict schedule,Cascadeless schedule,B
+"Which key constraint ensures that no two rows have the same value in a specific column, while allowing one NULL?",PRIMARY KEY,UNIQUE KEY,FOREIGN KEY,CHECK constraint,B
+Which SQL constraint limits the value range that can be placed in a column?,FOREIGN KEY,CHECK,DEFAULT,UNIQUE,B
+Which aggregation function returns the total number of rows in a table?,SUM(),COUNT(),AVG(),TOTAL(),B
+What does the UNION operator do in SQL?,Combines result sets of two queries and removes duplicate rows,Combines result sets including duplicates always,Multiplies rows of two tables,Joins tables horizontally,A
+What does UNION ALL do in SQL?,Combines result sets of two queries and includes duplicate rows,Removes all duplicate rows,Performs inner join,Filters NULL values,A
+What does INTERSECT operator return in SQL?,Rows that appear in either of two query results,Only rows that appear in BOTH query results,Rows in first query but not second,All Cartesian combinations,B
+What does EXCEPT / MINUS operator return in SQL?,Rows in first query that are NOT present in second query result,All matching rows,All non-matching rows from both queries,Intersection of queries,A
+"In relational model, a row in a table is formally called a:",Attribute,Tuple,Domain,Relation,B
+"In relational model, a column in a table is formally called an:",Attribute,Tuple,Entity,Degree,A
+The number of attributes in a relation is called its:,Cardinality,Degree,Domain,Tuple count,B
+The number of tuples in a relation is called its:,Degree,Cardinality,Attribute count,Domain size,B
+What is domain integrity?,Definition of valid set of values for an attribute,Uniqueness of primary key,Referential integrity across tables,Transaction consistency,A
+What is referential integrity constraint?,Foreign key value must match an existing primary key value in referenced table or be NULL,Primary key cannot be NULL,Attributes must be atomic,Database must be 3NF,A
+What is entity integrity constraint?,No primary key value can be NULL,Foreign key must exist,Data types must match,Tables must have unique names,A
+Which logging protocol requires writing log records to disk before data modifications are written to disk?,Write-Ahead Logging (WAL),Deferred Update,Shadow Paging,Check-pointing,A
+What is the purpose of checkpointing in database recovery?,To reduce the amount of log that needs to be processed during recovery,To encrypt database logs,To lock all tables during updates,To prevent deadlock,A
+What is shadow paging?,An alternative database recovery technique that does not require log-based undo/redo,Creating backup copies on remote servers,Shadowing primary key indexes,An index creation method,A
+Which normal form deals with join dependencies?,3NF,BCNF,4NF,5NF (PJNF),D
+What is an ER Diagram?,"Entity-Relationship diagram showing entities, attributes, and relationships",Execution-Run diagram for queries,Error-Recovery diagram,Entity-Reduction diagram,A
+"In ER diagram, an entity set that does not have a primary key is called a:",Strong Entity Set,Weak Entity Set,Derived Entity Set,Composite Entity Set,B
+"In ER diagram, how is a weak entity set represented visually?",Single Rectangle,Double Rectangle,Ellipse,Diamond,B
+"In ER diagram, how is a multi-valued attribute represented?",Single Ellipse,Double Ellipse,Dashed Ellipse,Rectangle,B
+"In ER diagram, how is a derived attribute represented?",Dashed Ellipse,Double Ellipse,Solid Ellipse,Diamond,A
+"In ER diagram, how is a relationship set represented?",Rectangle,Diamond,Ellipse,Triangle,B
+What is generalization in ER modeling?,A bottom-up approach combining multiple lower-level entity sets into a higher-level entity set,A top-down approach breaking entities apart,Creating weak entities,Normalizing tables to 3NF,A
+What is specialization in ER modeling?,A top-down approach breaking a higher-level entity into lower-level specialized entities,A bottom-up aggregation,Eliminating foreign keys,Combining tables,A
+What is an inline view in SQL?,A subquery in the FROM clause treated as a temporary table,A materialized view saved on disk,A primary key index,A stored procedure output,A
+What is a materialized view?,A view whose query result is physically stored on disk and refreshed periodically,A standard virtual view,An unindexed temporary view,A foreign key table,A
+Which hashing technique handles dynamic database expansion without full rehashing?,Static Hashing,Extendible Hashing,Linear Search,Binary Search,B
+What is dense index in database indexing?,An index record appears for every search key value in the data file,Index record appears for only some data values,Index stored in secondary RAM,Index with no keys,A
+What is sparse index?,An index record appears for only some of the search keys in data file,An index for every key,A clustered index on primary key only,An un-sorted index,A
+Which SQL statement is used to add a new column to an existing table?,ALTER TABLE ... ADD ...,UPDATE TABLE ... ADD ...,MODIFY TABLE ... INSERT ...,CREATE COLUMN ... IN ...,A
+Which SQL command modifies existing records in a table?,INSERT,UPDATE,CHANGE,ALTER,B
+What is the purpose of SAVEPOINT in SQL transactions?,To define a point in a transaction to which you can later roll back,To permanently save data to disk,To commit half the transaction,To lock table rows,A
+What is cascading delete in database foreign keys?,"When a parent row is deleted, all corresponding child rows are automatically deleted",Deleting primary key columns,Preventing deletion of parent rows,Deleting system logs,A
+Which relational calculus is based on selecting tuples that satisfy a predicate?,Tuple Relational Calculus (TRC),Domain Relational Calculus (DRC),Relational Algebra,SQL,A
+"In relational algebra, Division operator (R ÷ S) is used for queries involving:",Finding attributes in R but not S,"Universal quantification (e.g., 'find customers who bought ALL products')",Simple join,Union of domain sets,B
+What is query optimization in DBMS?,Selecting the most efficient execution plan for evaluating a query,Writing queries faster,Reducing query text size,Compressing database tables,A
+What is heuristic-based query optimization?,"Applying rule-based transformations (e.g., performing selection early) to simplify query tree",Testing every possible query plan physically,Randomly choosing index scans,Compiling SQL to C++,A
+What is cost-based query optimization?,"Estimating execution cost (I/O, CPU) of candidate execution plans and choosing the lowest cost",Charging users per query,Calculating disk storage price,Optimizing hardware speed,A
+What is a star schema in data warehousing?,A central fact table surrounded by dimension tables,A hierarchy of normalized dimension tables,A key-value document store,A graph database,A
+What is a snowflake schema?,A dimension table structure where dimension tables are normalized into multiple lookup tables,A central fact table with no dimensions,A flat CSV file structure,A distributed relational cluster,A
+What is OLAP?,Online Analytical Processing for multidimensional analysis,Online Transaction Processing for high-frequency writes,Object-Oriented Language Access Protocol,Open Log Archive Process,A
+What is OLTP?,Online Transaction Processing optimized for high-volume operational transactions,Online Analytical Processing for data warehousing,Object Level Transformation Protocol,Offline Table Processing,A
+What is data redundancy?,Storing the same data in multiple places unnecessarily,Backing up database safely,Encrypting database backups,Deleting duplicate rows,A
+Data integrity refers to:,"Accuracy, consistency, and reliability of data in database",Speed of query response,Size of physical storage,Number of database users,A
+Which isolated execution property prevents concurrent transaction interference?,Isolation,Atomicity,Durability,Consistency,A
+"In Star Schema, what does the Fact Table contain?",Numerical metrics/measures and foreign keys to dimension tables,Only descriptive text attributes,Database transaction logs,User authentication keys,A
+What is the difference between WHERE and HAVING in SQL?,WHERE filters individual rows before grouping; HAVING filters aggregated groups after GROUP BY,WHERE filters groups; HAVING filters rows,WHERE is used with SELECT; HAVING with INSERT,There is no difference,A
+Which normalization level removes transitive dependency?,1NF,2NF,3NF,4NF,C
+"In B+ tree, data pointers are stored in:",Only leaf nodes,Only internal nodes,Both internal and leaf nodes,Root node only,A
+What is an index scan in query execution?,Scanning index structure to locate requested rows quickly,Scanning every block of table sequentially,Creating a new index automatically,Deleting unused indexes,A

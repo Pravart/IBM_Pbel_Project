@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+Which OOP concept allows a class to inherit properties and behaviors from another class?,Encapsulation,Inheritance,Polymorphism,Abstraction,B
+Which feature of OOP wraps data and code operating on data into a single unit?,Abstraction,Encapsulation,Polymorphism,Inheritance,B
+What OOP concept allows different classes to respond to the same method call in unique ways?,Inheritance,Polymorphism,Abstraction,Encapsulation,B
+Hiding internal implementation details and showing only necessary interfaces is known as:,Encapsulation,Abstraction,Polymorphism,Inheritance,B
+What is a constructor in OOP?,A special method used to initialize objects of a class,A method that destroys objects,A static block of memory,A function that returns a boolean value,A
+Which method is called automatically when an object's memory is deallocated in languages like C++?,Constructor,Destructor,Finalizer,Initializer,B
+Can a constructor be overloaded in C++ or Java?,Yes,No,Only in C++,Only in Java,A
+Can a destructor be overloaded in C++?,Yes,No,Only if it is virtual,Only if private,B
+What type of polymorphism occurs at compile time?,Method Overriding,Method Overloading,Virtual Functions,Dynamic Binding,B
+What type of polymorphism occurs at runtime?,Method Overloading,Method Overriding,Operator Overloading,Static Binding,B
+What is method overloading?,Defining multiple methods in same class with same name but different signatures,Redefining a base class method in derived class,Hiding private variables,Creating dynamic objects,A
+What is method overriding?,Redefining a base class method in derived class with identical signature,Defining methods with different parameters in same class,Overloading operators,Declaring abstract constructors,A
+Which keyword is used in Java to inherit a class?,implements,extends,inherits,super,B
+Which keyword is used in Java to implement an interface?,extends,implements,interface,using,B
+Does C++ support multiple inheritance directly?,Yes,No,Only through interfaces,Only for abstract classes,A
+Does Java support multiple inheritance of classes directly?,Yes,No,Only via abstract classes,Yes using super keyword,B
+What is the diamond problem in C++ multiple inheritance?,Ambiguity when two parent classes inherit from the same grandparent class,Failure to allocate heap memory,Stack overflow in recursive constructors,Inability to override private methods,A
+How is the diamond problem solved in C++?,Virtual Base Classes,Static Methods,Friend Functions,Private Constructors,A
+What is an abstract class?,A class that cannot be instantiated and may contain abstract methods,A class with no member variables,A class with only static methods,A class that cannot be inherited,A
+What is a pure virtual function in C++?,A virtual function assigned = 0 in class declaration,A function with no arguments,A function that returns void,A function that cannot be overridden,A
+"If a class contains at least one pure virtual function in C++, it becomes an:",Abstract Class,Interface,Static Class,Final Class,A
+What is an interface in Java/C#?,A contract defining methods without implementations (prior to Java 8 default methods),A concrete class,A structure containing only private variables,A function pointer array,A
+Which specifier restricts visibility to members within the same class only?,public,protected,private,default/package,C
+"Which specifier allows access within the same class, derived classes, and same package?",private,protected,public,internal,B
+Which specifier makes class members accessible from anywhere?,private,protected,public,package,C
+What is a static member variable in a class?,A variable shared across all instances of the class,A variable recreated for each instance,A variable stored on stack,A constant that cannot change,A
+Can a static method access non-static instance variables directly?,Yes,No,Only if protected,Only if public,B
+What does the 'this' keyword refer to inside a class method?,The current instance of the class,The parent class,The global scope,The static class definition,A
+What does the 'super' keyword in Java refer to?,The immediate parent class object,The current class object,The main class,The root Object class always,A
+What is a friend function in C++?,A non-member function granted access to private and protected members of a class,A function in derived class,A static method,A function in same package,A
+What is virtual function in C++?,"A member function expected to be overridden in derived classes, resolved dynamically at runtime",A function with no body,A compile-time function,A private utility function,A
+What mechanism is used by C++ compilers to implement virtual function calls at runtime?,vtable (Virtual Table) and vptr,Function overloading table,Stack frame offset,Register mapping,A
+What is inline function in C++?,A function for which compiler attempts to inline code at call site to reduce function call overhead,A function declared inside main(),A virtual function,A recursive function,A
+What is copy constructor in C++?,A constructor initializing an object using another object of the same class,A constructor with no parameters,A constructor converting types,A static constructor,A
+What is deep copy vs shallow copy?,Deep copy duplicates pointed-to heap data; shallow copy copies references/pointers only,Shallow copy copies heap; deep copy copies stack,They are identical in OOP,Deep copy is for primitive types only,A
+When does a dangling pointer occur?,When a pointer points to memory that has been deallocated,When a pointer is initialized to NULL,When a pointer points to a static variable,When a pointer is passed to constructor,A
+What is garbage collection in programming languages like Java / C#?,Automatic heap memory management reclaiming unused object memory,Deleting old source code files,Clearing stack frames manually,Compiling bytecode,A
+Which keyword prevents a class from being inherited in Java?,static,final,abstract,const,B
+Which keyword prevents a method from being overridden in Java?,final,static,sealed,synchronized,A
+Which keyword prevents a variable from being re-assigned once initialized in Java?,final,const,static,volatile,A
+What is a sealed class in modern C# / Java?,A class that restricts which other classes may extend it,A class with no constructors,A class stored in encrypted memory,A static container class,A
+What is dynamic binding (late binding)?,Resolving method calls at runtime based on actual object type,Resolving calls at compile time,Linking static libraries,Allocating stack memory,A
+What is static binding (early binding)?,Resolving method calls at compile time based on reference type,Resolving calls at runtime,Allocating dynamic heap memory,Overriding methods,A
+What is object composition?,Combining objects to build more complex structures ('has-a' relationship),Inheriting from a base class ('is-a' relationship),Casting types at runtime,Overloading operators,A
+Inheritance represents what type of relationship?,'is-a' relationship,'has-a' relationship,'uses-a' relationship,'part-of' relationship,A
+Composition represents what type of relationship?,'has-a' relationship,'is-a' relationship,'belongs-to' relationship,'derived-from' relationship,A
+Why is composition often preferred over inheritance in OOP design?,"Promotes looser coupling, better flexibility, and prevents brittle base class issues",Composition runs faster on CPU,Composition uses zero RAM,Inheritance cannot use interfaces,A
+What is SOLID design principles 'S'?,Single Responsibility Principle,System Open Principle,Static Association Principle,Sequential Processing Principle,A
+What does Open/Closed Principle (SOLID) state?,"Software entities should be open for extension, but closed for modification",Classes should be open to public access,Code should be closed-source,All methods should be open virtual,A
+What does Liskov Substitution Principle state?,Subtypes must be substitutable for their base types without altering correctness of program,Derived classes must override all methods,Base classes must be abstract,Private variables must have getters,A
+What does Interface Segregation Principle state?,Clients should not be forced to depend upon interfaces they do not use,Each class must have 1 interface,Interfaces must contain private variables,All interfaces must be sealed,A
+What does Dependency Inversion Principle state?,High-level modules should not depend on low-level modules; both should depend on abstractions,Low-level modules must inherit high-level modules,Classes should depend on concrete implementations,Functions must invert arguments,A
+What design pattern ensures a class has only one instance and provides a global access point to it?,Factory Pattern,Singleton Pattern,Observer Pattern,Strategy Pattern,B
+What design pattern defines a 1-to-N dependency where state change in subject notifies all observers?,Observer Pattern,Adapter Pattern,Decorator Pattern,Singleton Pattern,A
+What design pattern creates objects without exposing instantiation logic to client?,Factory Method Pattern,Singleton Pattern,Composite Pattern,Proxy Pattern,A
+What design pattern allows incompatible interfaces to collaborate by converting interface of a class?,Adapter Pattern,Bridge Pattern,Flyweight Pattern,Command Pattern,A
+What design pattern attaches additional responsibilities to an object dynamically?,Decorator Pattern,Facade Pattern,Proxy Pattern,Builder Pattern,A
+What design pattern separates construction of a complex object from its representation?,Builder Pattern,Prototype Pattern,Abstract Factory,Singleton,A
+What is Operator Overloading in C++?,Giving extended meaning to C++ operators when applied to user-defined data types,Changing operator precedence,Creating new custom symbols,Overloading function signatures,A
+Which operator CANNOT be overloaded in C++?,Class Member Access Operator (.),Addition Operator (+),Subscript Operator ([]),Assignment Operator (=),A
+What is an anonymous object in Java / C++?,An object created without giving it an explicit named reference variable,An object stored in private scope,An uninitialized pointer,A thread object,A
+What is a copy assignment operator in C++?,Operator= used to copy values from one existing object to another existing object,Constructor used during initialization,Method to clone interfaces,Static cast operator,A
+What is Rule of Three in C++ (pre-C++11)?,"If a class needs custom Destructor, Copy Constructor, or Copy Assignment, it likely needs all three",A class should have max 3 variables,A class can inherit from max 3 parents,A method can take max 3 arguments,A
+What added to Rule of Three in C++11 to make it Rule of Five?,Move Constructor and Move Assignment Operator,Virtual Destructor and Static Method,Friend Class and Template,Private Getter and Setter,A
+What is RTO / RTTI in C++?,"Run-Time Type Information enabling type determination during execution (e.g. dynamic_cast, typeid)",Real-Time Thread Interface,Register Transfer Type Index,Recursive Tree Insertion,A
+Which cast operator in C++ performs runtime type checking for polymorphic class hierarchies?,dynamic_cast,static_cast,reinterpret_cast,const_cast,A
+Which C++ cast operator converts between unrelated types by reinterpreting bit patterns?,reinterpret_cast,static_cast,dynamic_cast,const_cast,A
+Which C++ cast operator is used to add or remove constness of a variable?,const_cast,static_cast,dynamic_cast,reinterpret_cast,A
+What is a namespace in C++ / C#?,A scope container preventing name collisions among functions/classes,A physical folder on disk,A heap allocation region,A database schema,A
+What is a template class in C++?,A blueprint for creating generic classes that work with any data type,A class with pre-compiled bytecode,An abstract class with no variables,A singleton instance,A
+What is generic programming?,Writing algorithms in terms of types to be specified later that are then instantiated as needed,Writing untyped code in Python,Using static global variables,Overriding virtual methods,A
+What is a destructor's return type in C++?,No return type (not even void),void,int,bool,A
+Can a class destructor take parameters in C++?,No,Yes,Only if static,Only if template,A
+Why should a base class destructor usually be declared virtual in C++?,To ensure proper cleanup of derived class resources when deleting derived object via base pointer,To speed up program termination,To make the base class abstract,To prevent inheritance,A
+What is object slicing in C++?,Loss of derived class state when copying derived object into base class object by value,Allocating object across multiple memory blocks,Deleting half of an object,Splitting class methods,A
+What is a default constructor?,A constructor that can be called with no arguments,A constructor provided by compiler always,A constructor in base class only,A private constructor,A
+What happens if you define a custom parameterized constructor in C++ or Java?,Compiler no longer automatically generates default zero-argument constructor,Compiler throws compile error,Default constructor becomes virtual,Class becomes static,A
+What is explicit constructor in C++?,A constructor declared with 'explicit' keyword to prevent implicit type conversions,A public constructor,A constructor called manually in main,A constructor taking pointers,A
+What is a wrapper class in Java?,"A class providing object representation for primitive data types (e.g., Integer for int)",A class wrapping database connection,A class wrapping private methods,A network socket container,A
+What is autoboxing in Java?,Automatic conversion of primitive types into their corresponding object wrapper classes,Boxing memory into stack frames,Converting objects to JSON,Serializing classes to disk,A
+What is unboxing in Java?,Automatic conversion of object wrapper class into corresponding primitive type,Deleting objects from heap,Unzipping JAR files,Casting derived class to base,A
+What is garbage collector STW (Stop-The-World) pause?,Phase where application threads are paused while garbage collector manages heap memory,Network connection loss,Program crash due to null pointer,Disk I/O lock,A
+What is memory leak in C++?,Failure to release allocated heap memory when it is no longer needed,Running out of stack memory,Overflowing integer variable,Writing past array bounds,A
+What are Smart Pointers in modern C++ (C++11)?,RAII objects managing pointer lifetimes automatically to prevent memory leaks,Raw hardware pointers,Function pointers,Pointers stored in register,A
+Which smart pointer in C++ represents exclusive ownership of a dynamically allocated object?,std::unique_ptr,std::shared_ptr,std::weak_ptr,std::auto_ptr,A
+Which smart pointer in C++ uses reference counting to allow shared ownership?,std::shared_ptr,std::unique_ptr,std::weak_ptr,std::raw_ptr,A
+"Which smart pointer in C++ holds a non-owning reference to an object managed by std::shared_ptr, avoiding circular references?",std::weak_ptr,std::unique_ptr,std::raw_ptr,std::scoped_ptr,A
+What does RAII stand for in C++?,Resource Acquisition Is Initialization,Random Access Index Integration,Runtime Application Interface Initialization,Register Allocation In Instruction,A
+What is core idea of RAII?,"Holding a resource tied to object lifetime (acquired in constructor, released in destructor)",Initializing all variables to 0,Allocating all memory on heap,Using global static managers,A
+What is a friend class in C++?,A class granted access to private and protected members of another class,A class inheriting from base class,A class in same file,An inner class in Java,A
+"Is friendship in C++ symmetric (if A is friend of B, is B friend of A)?",No,Yes,Only if declared static,Only in templates,A
+"Is friendship in C++ transitive (if A is friend of B and B is friend of C, is A friend of C)?",No,Yes,Only with public inheritance,Only if inherited,A
+What is an inner class in Java?,A class declared inside another class,A class inside main method only,A private interface,A derived class,A
+What is a static nested class in Java?,A nested class that does not require an instance of the outer enclosing class,An abstract inner class,A class stored on stack,A local variable container,A
+What is an anonymous inner class in Java?,"An inner class declared without a class name, created directly in an expression",A private class,A sealed class,A package-private interface,A
+What is method signature composed of in Java?,"Method name and parameter parameter list (number, types, order)",Method return type and name,Access modifier and name,Return type and throw clauses,A
+Does method return type participate in method overloading in Java or C++?,No,Yes,Only in C++,Only if virtual,A
+What is covariants return type in Java/C++ method overriding?,Overriding method can return a subtype of the type returned by overridden method,Overriding method must return void,Return type must be primitive,Return type must be identical integer,A
+What is immutability in object design?,An object whose state cannot be modified after it is created (e.g. String in Java),An object that cannot be copied,An object with private methods only,An object stored in ROM,A
+What is string pool in Java?,A special memory region in heap storing literal String objects to optimize RAM usage,A linked list of characters,A stack frame for text,A thread-safe buffer,A

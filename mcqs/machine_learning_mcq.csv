@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+What type of learning task uses labeled training data to predict output values?,Supervised Learning,Unsupervised Learning,Reinforcement Learning,Self-Supervised Learning,A
+What type of learning finds hidden patterns or intrinsic structures in unlabeled data?,Supervised Learning,Unsupervised Learning,Reinforcement Learning,Semi-Supervised Learning,B
+Which algorithm is an unsupervised learning method used for clustering?,Linear Regression,K-Means,Logistic Regression,Support Vector Machines,B
+Which metric is defined as True Positives / (True Positives + False Positives)?,Recall,Precision,Accuracy,F1-Score,B
+Which metric is defined as True Positives / (True Positives + False Negatives)?,Precision,Recall,F1-Score,Specificity,B
+What is the formula for F1-Score?,2 * (Precision * Recall) / (Precision + Recall),(Precision + Recall) / 2,True Positives / Total,Precision / Recall,A
+What condition occurs when a model fits training data extremely well but generalizes poorly to test data?,Underfitting,Overfitting,Optimal convergence,High Bias,B
+High bias in a machine learning model generally leads to:,Overfitting,Underfitting,Perfect accuracy,High variance,B
+High variance in a machine learning model generally leads to:,Underfitting,Overfitting,Low training error and low test error,Zero bias,B
+Which algorithm builds an ensemble of decision trees using bootstrap aggregating (bagging)?,Gradient Boosting,Random Forest,Support Vector Machine,AdaBoost,B
+What does PCA stand for in machine learning?,Primary Cluster Analysis,Principal Component Analysis,Predictive Component Algorithm,Polynomial Classification Analysis,B
+What is the primary goal of Principal Component Analysis (PCA)?,Classification,Dimensionality Reduction,Anomaly Detection in Time Series,Clustering text documents,B
+"Which activation function outputs values in the range (0, 1)?",ReLU,Sigmoid,Tanh,Leaky ReLU,B
+"Which activation function outputs values in the range (-1, 1)?",Sigmoid,Tanh,ReLU,Softmax,B
+"Which activation function returns max(0, x)?",Sigmoid,Tanh,ReLU,Softmax,C
+Which activation function is typically used in the output layer for multi-class classification?,Sigmoid,Softmax,ReLU,Linear,B
+Which loss function is commonly used for binary classification models?,Mean Squared Error (MSE),Binary Cross-Entropy / Log Loss,Categorical Cross-Entropy,Mean Absolute Error (MAE),B
+Which loss function is commonly used for linear regression models?,Mean Squared Error (MSE),Binary Cross-Entropy,Hinge Loss,Kullback-Leibler Divergence,A
+L1 regularization is also known as:,Ridge Regularization,Lasso Regularization,Elastic Net,Dropout,B
+L2 regularization is also known as:,Lasso Regularization,Ridge Regularization,Batch Normalization,Early Stopping,B
+What is the key characteristic effect of L1 regularization on model weights?,"Drives some weights to exactly zero, producing sparse models",Shrinks all weights towards zero smoothly without zeroing them,Increases model variance,Doubles feature dimensions,A
+"In Support Vector Machines (SVM), what are support vectors?",Data points that lie closest to the decision boundary/margin,Outliers removed before training,Centroids of clusters,Randomly sampled background points,A
+What trick allows SVMs to create non-linear decision boundaries in original input space?,Bagging trick,Kernel trick,Boosting trick,Gradient trick,B
+What technique randomly drops neural network units during training to prevent overfitting?,Batch Normalization,Dropout,Data Augmentation,Gradient Clipping,B
+What parameter in K-Means clustering represents 'K'?,Number of features,Number of clusters to form,Number of iterations,Number of data points,B
+How does K-Nearest Neighbors (KNN) classify a new query point?,By taking the majority vote among its K nearest neighbors in feature space,By computing eigenvalues,By fitting a straight line,By calculating posterior probabilities using Bayes theorem,A
+Is KNN a parametric or non-parametric algorithm?,Parametric,Non-parametric,Semi-parametric,Unsupervised parametric,B
+What does Naive Bayes assume about input features?,Features are highly correlated,Features are conditionally independent given the class label,Features follow a uniform distribution,Features are continuous only,B
+Which theorem forms the foundation of Naive Bayes classifier?,Central Limit Theorem,Bayes' Theorem,Gauss-Markov Theorem,Fermat's Theorem,B
+What is the purpose of Gradient Descent?,To minimize loss/cost function by iteratively updating weights in direction of negative gradient,To maximize feature dimension,To cluster data automatically,To evaluate model accuracy,A
+What happens if the learning rate in Gradient Descent is set too high?,Model converges very slowly,Algorithm may overshoot the minimum and diverge,Model overfits instantly,Weights remain zero,B
+What happens if the learning rate in Gradient Descent is set too low?,Model converges extremely slowly or gets stuck in local minima,Model diverges immediately,Loss drops to zero in 1 step,Model underfits completely,A
+What is Stochastic Gradient Descent (SGD)?,Gradient descent where weights are updated using a single randomly chosen sample per iteration,Gradient descent using all data at once,Gradient descent with random learning rate,Non-iterative optimization,A
+What is Mini-batch Gradient Descent?,Weights updated using a small random batch of samples at each step,Weights updated after whole dataset,Weights updated sample by sample,Optimization without gradients,A
+What curve plots True Positive Rate against False Positive Rate at various threshold settings?,Precision-Recall Curve,ROC Curve,Learning Curve,Scree Plot,B
+What does AUC stand for in model evaluation?,Area Under the Curve,Automated Unsupervised Classification,Average Unit Cost,Accuracy Under Constraints,A
+What is the Receiver Operating Characteristic (ROC) AUC value of a perfect classifier?,0.0,0.5,1.0,100,C
+What is the ROC AUC value of a completely random guess classifier?,0.0,0.5,1.0,-1.0,B
+Which ensemble method builds models sequentially where each new model corrects errors of previous models?,Bagging,Boosting,Stacking,Voting,B
+Which ensemble method trains multiple models independently in parallel on bootstrap samples?,Boosting,Bagging,Cascade,Sequential Learning,B
+AdaBoost stands for:,Adaptive Boosting,Advanced Boosting,Additive Boosting,Automatic Boosting,A
+XGBoost stands for:,Extreme Gradient Boosting,Extra General Boosting,Exact Gradient Boosting,X-Layer Boosting,A
+"What is data normalization (e.g., Min-Max scaling)?","Rescaling feature values into a target range, usually [0, 1]",Removing outliers from dataset,Converting categorical labels to integers,Standardizing features to mean 0 and variance 1,A
+What is standardization (Z-score normalization)?,Scaling features so they have mean 0 and standard deviation 1,Scaling features between 0 and 1,Converting string columns to dummy variables,Trimming data above 99th percentile,A
+What method converts categorical variables into binary indicator (0/1) columns?,Label Encoding,One-Hot Encoding,Ordinal Encoding,Target Encoding,B
+When should Ordinal Encoding be used instead of One-Hot Encoding?,When categorical categories have an inherent ordering or rank,When categories are nominal without rank,When feature values are continuous floats,For target variable only,A
+What problem arises when independent variables in a regression model are highly correlated with each other?,Overfitting,Multicollinearity,Heteroscedasticity,Autocorrelation,B
+What is heteroscedasticity in regression analysis?,Non-constant variance of residuals across levels of independent variable,Correlated residuals over time,Non-linear relationships,Multi-collinear features,A
+"In decision trees, what index measures the impurity/diversity of a dataset split?",Gini Impurity,Euclidean Distance,Cos Similarity,Pearson Coefficient,A
+"Besides Gini Impurity, what other information measure is commonly used for splitting Decision Trees?",Entropy / Information Gain,Manhattan Distance,R-Squared,Adjusted R-Squared,A
+What does a confusion matrix display?,"Counts of True Positives, True Negatives, False Positives, and False Negatives",Loss vs epoch curves,Feature importance ranks,Cluster centroids,A
+"What is Cross-Validation (e.g., K-Fold Cross-Validation)?",A technique to assess model performance and generalization by partitioning data into K subsets for training and testing,Validating data labels manually,Combining ML and SQL databases,Testing models on training data only,A
+"In Stratified K-Fold Cross-Validation, how are folds created?",Each fold contains roughly the same percentage of target class samples as the complete set,Folds are created purely at random,Folds are sorted by feature values,Folds contain only test data,A
+What is the curse of dimensionality?,"Phenomenon where data becomes extremely sparse in high-dimensional space, making optimization difficult",Models taking too much memory in 2D,Overfitting caused by having too few features,Inability to plot 3D charts,A
+Which algorithm is an example of an unsupervised anomaly detection technique?,Isolation Forest,Logistic Regression,Naive Bayes,Linear Discriminant Analysis,A
+What is the hyperparameter in machine learning?,"A configuration setting set before training begins (e.g., learning rate, K in KNN)","A parameter learned automatically during training (e.g., weights)",The final test accuracy,A database connection string,A
+What is a model parameter?,"A variable internal to the model estimated from training data (e.g., weights, biases)",A configuration knob set manually like batch size,The learning rate,Number of estimators in Random Forest,A
+What is Grid Search CV?,Exhaustive search over specified hyperparameter values for an estimator,Searching through database rows,Randomly sampling hyperparameters without bounds,A neural network architecture,A
+What is Random Search CV?,Randomly sampling hyperparameter combinations from specified distributions,Searching all combinations systematically,Grid search on GPUs,Clustering hyperparameter values,A
+What is Early Stopping in training deep learning models?,Halting training when performance on validation set stops improving to prevent overfitting,Stopping training when GPU gets hot,Stopping training after epoch 1,Deleting bad batches,A
+What does CNN stand for in deep learning?,Convolutional Neural Network,Combined Network Architecture,Centralized Neural Network,Continuous Node Network,A
+"What is the primary layer in CNNs used for spatial feature extraction (edges, textures)?",Convolutional Layer,Dense Layer,Recurrent Layer,Dropout Layer,A
+"What is the function of Pooling layers (e.g., Max Pooling) in CNNs?",Reduce spatial dimensions of feature maps while retaining important information,Increase parameter count,Add non-linearity to output,Calculate cross-entropy loss,A
+What type of neural network architecture is specifically designed for sequential/time-series data?,Recurrent Neural Network (RNN),Standard Feedforward Network,Convolutional Neural Network (CNN),Self-Organizing Map,A
+What issue causes traditional simple RNNs to fail on long sequences?,Vanishing and Exploding Gradient Problem,High Memory Consumption,Over-segmentation,Underfitting on step 1,A
+Which RNN architecture variants address the vanishing gradient problem using gating mechanisms?,LSTM and GRU,CNN and AlexNet,ResNet and VGG,GAN and Autoencoder,A
+What does LSTM stand for?,Long Short-Term Memory,Linear System Training Method,Layered Structural Transfer Model,Long Sequence Tensor Method,A
+What does GRU stand for in deep learning?,Gated Recurrent Unit,Gradient Regression Unit,Generalized Residual Unit,Global Recurrent Architecture,A
+What is Transfer Learning?,Reusing a pre-trained model developed for one task as the starting point for a model on a second task,Moving data between servers,Transferring weights from RAM to Disk,Converting models from Python to C++,A
+What neural network architecture consists of a Generator and a Discriminator competing against each other?,Generative Adversarial Network (GAN),Autoencoder,Transformer,Variational Autoencoder,A
+"In a GAN, what is the role of the Generator?",Generate realistic fake data samples to fool the discriminator,Classify real vs fake data,Reduce feature dimensions,Calculate accuracy,A
+What architecture introduced Self-Attention mechanisms and replaced RNNs in NLP?,Transformer,CNN,MLP,Boltzmann Machine,A
+What does BERT stand for in NLP?,Bidirectional Encoder Representations from Transformers,Basic Entity Recognition Transformer,Binary Encoded Recurrent Tree,Batch Evaluation Real-time Transformer,A
+What is an Autoencoder used for?,Unsupervised learning designed to compress input into lower-dimensional code and reconstruct it,Supervised text classification,Predicting stock prices directly,Image labeling,A
+"In Autoencoder, what is the middle compressed bottleneck layer called?",Latent Space / Code,Output Layer,Input Layer,Convolutional Filter,A
+What is a elbow method used for in K-Means clustering?,Determining the optimal number of clusters K by plotting sum of squared errors vs K,Checking gradient descent convergence,Finding learning rate,Determining neural net depth,A
+What is Silhouette Score used for?,Measuring how similar an object is to its own cluster compared to other clusters,Measuring classification recall,Measuring neural network loss,Evaluating regression MSE,A
+What is the range of Silhouette Score?,"[-1, 1]","[0, 100]","[0, 1]","[-infinity, +infinity]",A
+What is Softmax function output property?,Outputs a probability distribution summing to 1 across classes,Outputs values between -1 and 1 summing to 0,Outputs unbounded positive integers,Outputs binary 0 or 1 strictly,A
+What is the Vanishing Gradient Problem?,"Gradients become extremely small during backpropagation in deep networks, slowing down early layer learning",Gradients become infinity,Loss function reaches zero immediately,Learning rate decays to 0,A
+What structural innovation in ResNet solved the vanishing gradient problem in very deep networks?,Residual / Skip Connections,Batch Normalization only,Dropout layers,Larger filter sizes,A
+What is Data Augmentation in computer vision?,"Technique to artificially expand dataset size by applying random transformations (flips, rotations, crops)",Collecting real images from web,Adding synthetic labels,Normalizing pixel values to 0-1,A
+What is Batch Normalization?,Technique that normalizes layer inputs across a mini-batch to stabilize and speed up training,Normalizing training labels,Normalizing full dataset on disk,Sorting batches by size,A
+"In Linear Regression, what does R-squared measure?",Proportion of variance in dependent variable explained by independent variables,Absolute average error in predictions,Classification accuracy,Correlation between weights,A
+What is Adjusted R-squared?,Modified version of R-squared that penalizes addition of unnecessary features,Square root of R-squared,R-squared multiplied by sample size,Difference between R-squared and MSE,A
+What is a baseline model in machine learning?,"A simple, naive model (e.g. predicting majority class or mean) used as a benchmark for complex models",The final deployed model,The heaviest model,A pre-trained ResNet,A
+What is Imbalanced Data?,Dataset where one class significantly outnumbers another class in target labels,Dataset with missing columns,Dataset stored in NoSQL format,Dataset with unequal feature scales,A
+Which technique handles imbalanced data by creating synthetic minority class examples?,SMOTE (Synthetic Minority Over-sampling Technique),PCA,Min-Max Scaling,L2 Regularization,A
+Which metric is better than Accuracy for evaluating highly imbalanced classification datasets?,F1-Score / PR-AUC,Accuracy,Mean Absolute Error,R-Squared,A
+What is regression analysis used for?,Predicting continuous numerical target values,Predicting discrete class labels,Grouping unlabeled points,Compressing text,A
+What is classification analysis used for?,Predicting discrete categorical class labels,Predicting continuous floats,Scaling images,Clustering without labels,A
+What is Cosine Similarity?,Metric measuring cosine of angle between two non-zero vectors in multi-dimensional space,Euclidean distance between two points,Manhattan distance,Correlation coefficient,A
+Range of Cosine Similarity for non-negative vectors is:,"[0, 1]","[-1, 1]","[0, 100]",Unbounded,A
+What is the learning rate hyperparameter?,Step size at each iteration while moving toward minimum of loss function,Time taken to train 1 epoch,Ratio of train to test data,Number of layers in neural net,A
+What is Backpropagation?,Algorithm using chain rule to calculate loss gradients with respect to each weight in neural network,Forward pass through network,Random weight initialization,Clustering technique,A
+What is Gradient Clipping?,Technique to cap gradient values at a threshold to prevent exploding gradients,Dropping zero gradients,Dividing learning rate by 2,Removing layers with low gradients,A
+What is the main advantage of Random Forest over a Single Decision Tree?,Reduces variance and overfitting by averaging multiple trees,Faster to train on 1 CPU,Easier to visualize fully,Requires zero tuning,A
+What is CatBoost?,Gradient boosting algorithm optimized for handling categorical features automatically,CNN framework for image detection,Clustering library,Linear solver,A
+Which reinforcement learning component rewards or penalizes an agent for actions taken in an environment?,Reward Signal,Convolution Filter,Gradient Vector,Kernel Matrix,A
+What equation is fundamental to Q-Learning in Reinforcement Learning?,Bellman Equation,Euler Equation,Navier-Stokes Equation,Schrödinger Equation,A

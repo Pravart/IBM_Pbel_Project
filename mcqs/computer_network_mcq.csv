@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+Which layer of the OSI model is responsible for end-to-end communication and error recovery?,Network Layer,Transport Layer,Data Link Layer,Session Layer,B
+What is the primary function of the Address Resolution Protocol (ARP)?,Map IP addresses to MAC addresses,Map MAC addresses to IP addresses,Translate domain names to IP addresses,Route packets across subnets,A
+Which protocol is used to dynamically assign IP addresses to devices on a network?,DNS,DHCP,ICMP,SNMP,B
+What is the standard length of an IPv4 address?,16 bits,32 bits,64 bits,128 bits,B
+What is the standard length of an IPv6 address?,32 bits,64 bits,128 bits,256 bits,C
+Which TCP/IP transport protocol is connectionless and unacknowledged?,TCP,UDP,SCTP,BGP,B
+Which port number is default for HTTP?,21,22,80,443,C
+Which port number is default for HTTPS?,80,443,8080,25,B
+Which port number is default for SSH?,20,21,22,23,C
+Which device operates primarily at Layer 2 of the OSI model?,Hub,Switch,Router,Repeater,B
+Which device operates primarily at Layer 3 of the OSI model?,Hub,Switch,Router,Bridge,C
+"Which protocol is used to control error messaging and diagnostics (e.g., ping)?",ICMP,IGMP,ARP,RARP,A
+What is the default subnet mask for a Class B IP address?,255.0.0.0,255.255.0.0,255.255.255.0,255.255.255.255,B
+Which topology connects all nodes to a central hub or switch?,Bus,Ring,Star,Mesh,C
+"In a fully connected mesh network with n nodes, how many physical links are required?",n-1,n,n(n-1)/2,n^2,C
+What is the maximum transfer rate of standard Gigabit Ethernet?,10 Mbps,100 Mbps,1000 Mbps,10 Gbps,C
+Which collision handling mechanism is used in IEEE 802.3 Ethernet networks?,CSMA/CA,CSMA/CD,Token Passing,Slotted ALOHA,B
+Which wireless access mechanism is used in Wi-Fi (IEEE 802.11)?,CSMA/CD,CSMA/CA,TDMA,CDMA,B
+What layer in the OSI model handles data encryption and compression?,Application,Presentation,Session,Transport,B
+What is the main role of the DNS server?,Assign IP addresses,Translate domain names to IP addresses,Filter network traffic,Encrypt web traffic,B
+Which protocol is used to transfer files between client and server reliably?,FTP,TFTP,SNMP,SMTP,A
+Which routing protocol uses the Bellman-Ford distance-vector algorithm?,OSPF,RIP,BGP,IS-IS,B
+Which routing protocol uses Dijkstra's link-state algorithm?,RIP,OSPF,EIGRP,BGP,B
+Which protocol is the standard Exterior Gateway Protocol (EGP) used for inter-AS routing on the internet?,OSPF,RIP,BGP,IS-IS,C
+What does TTL (Time to Live) in an IPv4 header prevent?,Packet corruption,Infinite routing loops,Unauthorized access,Packet fragment loss,B
+What is the size of a MAC address?,32 bits,48 bits,64 bits,128 bits,B
+Which TCP handshake sequence establishes a connection?,SYN -> SYN-ACK -> ACK,ACK -> SYN -> SYN-ACK,SYN -> ACK -> FIN,FIN -> ACK -> FIN-ACK,A
+Which flag in the TCP header is used to gracefully close a connection?,RST,FIN,SYN,URG,B
+Which flag in the TCP header is used to forcibly reset a connection?,RST,FIN,ACK,PSH,A
+Which field in the Ethernet frame header is used for frame synchronization?,Preamble,SFD,FCS,EtherType,A
+What is the function of the Frame Check Sequence (FCS) in an Ethernet frame?,Flow control,Error detection using CRC,Routing,Encryption,B
+Which IP address range is reserved for Class A private networks?,10.0.0.0 - 10.255.255.255,172.16.0.0 - 172.31.255.255,192.168.0.0 - 192.168.255.255,127.0.0.0 - 127.255.255.255,A
+Which IP address range is reserved for loopback testing?,10.0.0.0/8,127.0.0.0/8,192.168.0.0/16,169.254.0.0/16,B
+What technique allows multiple private IP addresses to map to a single public IP address?,CIDR,NAT,VLAN,STP,B
+Which protocol prevents switching loops in Ethernet networks?,VTP,STP,RIP,OAM,B
+What does CIDR stand for?,Classless Inter-Domain Routing,Centralized IP Data Routing,Classful Internet Domain Routing,Common IP Distribution Regulation,A
+How many host addresses are usable in a /24 subnet?,256,255,254,252,C
+How many host addresses are usable in a /28 subnet?,16,14,12,8,B
+Which layer of OSI model provides dialog control and synchronization?,Transport,Session,Presentation,Application,B
+What is the MTU size for standard Ethernet frames?,512 bytes,1024 bytes,1500 bytes,9000 bytes,C
+Which protocol is used to retrieve email from a server and store it locally (download & delete)?,IMAP,POP3,SMTP,MIME,B
+Which protocol keeps emails synchronized across multiple client devices?,POP3,IMAP,SMTP,SNMP,B
+Which protocol is used by email clients to send outgoing messages to a mail server?,SMTP,POP3,IMAP,HTTP,A
+"In sliding window protocol, if window size is 1, it is called:",Go-Back-N,Selective Repeat,Stop-and-Wait,Slotted ALOHA,C
+"In Go-Back-N ARQ, if frame N is corrupted, which frames must be retransmitted?",Only frame N,Frame N and all subsequent frames in the window,All frames from beginning,No frames are retransmitted,B
+"In Selective Repeat ARQ, which frames are retransmitted upon error?",Only the unacknowledged/damaged frame,The damaged frame and all following frames,Entire window,None,A
+What is the main cause of network jitter?,Constant latency,Variation in packet delay,High bandwidth,Zero packet loss,B
+What is latency in computer networks?,Data transfer rate,Time taken for data to travel from source to destination,Number of dropped packets,Frequency of transmission,B
+Which medium access control protocol uses token passing?,Ethernet,FDDI,Wi-Fi,Bluetooth,B
+What does VLAN stand for?,Virtual Local Area Network,Variable Local Area Network,Vector Local Area Network,Visual Local Area Network,A
+Which IEEE standard defines wireless LANs (Wi-Fi)?,802.3,802.5,802.11,802.15,C
+Which IEEE standard defines Ethernet?,802.3,802.11,802.15,802.1Q,A
+Which IEEE standard defines Bluetooth / Wireless PAN?,802.3,802.11,802.15,802.16,C
+Which utility is used to trace the path packets take to reach a destination host?,ping,traceroute / tracert,netstat,nslookup,B
+Which command displays network statistics and active TCP connections?,ipconfig,netstat,arp,dig,B
+What is the purpose of subnetting?,"Divide a large network into smaller, manageable sub-networks",Increase wireless range,Speed up MAC address lookup,Encrypt packet headers,A
+Which protocol allows monitoring and managing network devices like routers and switches?,SNMP,SMTP,SSH,Telnet,A
+Why is SSH preferred over Telnet?,SSH is faster,SSH encrypts session traffic while Telnet transmits in plaintext,SSH uses UDP,Telnet requires a GUI,B
+What is the purpose of a gateway in networking?,Connect two different networks using different protocols,Amplify signals,Assign IP addresses,Store web pages,A
+What is multiplexing in telecommunications?,Combining multiple signals into one signal over a shared medium,Splitting one signal into error-free duplicates,Encrypting signals,Converting digital to analog only,A
+Which multiplexing technique divides the total bandwidth into non-overlapping frequency bands?,TDM,FDM,WDM,CDM,B
+Which multiplexing technique assigns unique mathematical codes to users on the same frequency?,FDM,TDM,CDMA,OFDM,C
+What type of transmission allows data to travel in both directions simultaneously?,Simplex,Half-Duplex,Full-Duplex,Single-Duplex,C
+Walkie-talkie communication is an example of:,Simplex,Half-Duplex,Full-Duplex,Multiplex,B
+Traditional radio broadcasting is an example of:,Simplex,Half-Duplex,Full-Duplex,Duplex,A
+Which cable type uses light pulses for data transmission?,Coaxial cable,Shielded Twisted Pair (STP),Fiber-optic cable,Unshielded Twisted Pair (UTP),C
+Which connector is commonly used for Ethernet networking cables?,RJ-11,RJ-45,BNC,SMA,B
+What is the function of a repeater?,Regenerate and amplify signals over long distances,Filter packets based on IP,Translate network addresses,Store user credentials,A
+What is a broadcast domain?,A network segment where any device can transmit directly to all others at Layer 2,A single cable segment,A domain registered in DNS,A range of public IP addresses,A
+Which device breaks up collision domains but NOT broadcast domains by default?,Hub,Switch,Router,Repeater,B
+Which device breaks both collision domains AND broadcast domains?,Switch,Hub,Router,Bridge,C
+What is the maximum number of usable IP addresses in a Class C network without subnetting?,128,254,256,512,B
+"In IPv4, what is the purpose of the Subnet Mask?",Identify host portion and network portion of an IP address,Specify hardware address,Encapsulate UDP data,Determine routing protocol,A
+Which type of IP address is 224.0.0.1?,Unicast,Broadcast,Multicast,Anycast,C
+Which IP addressing scheme delivers a packet to the nearest instance among multiple destinations?,Unicast,Multicast,Anycast,Broadcast,C
+What protocol does ping command use?,TCP,UDP,ICMP,IGMP,C
+What is maximum header length of IPv4 without options?,20 bytes,32 bytes,40 bytes,64 bytes,A
+What is the fixed header size of IPv6?,20 bytes,40 bytes,64 bytes,128 bytes,B
+Which socket address uniquely identifies an application endpoint on a network host?,IP address only,MAC address only,IP address + Port number,MAC address + Port number,C
+What is the main role of BGP (Border Gateway Protocol)?,Route data between Autonomous Systems (AS) on the Internet,Assign dynamic IP addresses,Resolve domain names,Encrypt local switches,A
+What is split horizon in distance vector routing?,Technique to prevent routing loops by not sending routing info back on the interface it was learned,Splitting packets into sub-packets,Dividing subnets into equal halves,Encrypting route tables,A
+What is poison reverse?,Setting unreachable route metric to infinity when advertising back to source,Deleting corrupted routing tables,Blocking malicious IPs automatically,Reversing IP octets,A
+"In OSI model, which layer is responsible for framing?",Physical Layer,Data Link Layer,Network Layer,Transport Layer,B
+What is the bandwidth-delay product?,Maximum amount of data that can be in transit on the network link at any given time,Total time to transmit one bit,Ratio of download speed to upload speed,Minimum delay required for maximum throughput,A
+Which error detection method appends a remainder from polynomial division to the message?,Parity check,Checksum,Cyclic Redundancy Check (CRC),Hamming code,C
+Hamming distance between 1011101 and 1001001 is:,1,2,3,4,B
+Which encoding scheme uses transition at the middle of bit interval for synchronization?,Manchester encoding,NRZ-L,NRZ-I,Unipolar RZ,A
+"In congestion control, what algorithm exponentially increases congestion window size until threshold?",Congestion Avoidance,Slow Start,Fast Recovery,Fast Retransmit,B
+"In TCP congestion control, what happens during additive increase phase?",Window size doubles every RTT,Window size increases by 1 MSS per RTT,Window size is halved immediately,Window drops to 1 MSS,B
+What is the purpose of Nagle's algorithm in TCP?,Improve efficiency by combining small outgoing messages into a single packet,Prevent SYN flood attacks,Accelerate DNS lookups,Compress TCP headers,A
+Which type of switching establishes a dedicated physical path before communication begins?,Packet switching,Circuit switching,Message switching,Cell switching,B
+Which switching method stores the entire packet before forwarding it?,Cut-through switching,Store-and-forward switching,Fragment-free switching,Cell switching,B
+Which switching method reads only the destination MAC address before forwarding the frame?,Cut-through switching,Store-and-forward switching,Fragment-free switching,Packet switching,A
+What is maximum segment size (MSS) in TCP?,Maximum amount of data in bytes that TCP can receive in a single unsegmented IP packet,Total size of TCP header plus IP header,Maximum frame length on Ethernet,Size of receiver buffer,A
+Which layer is responsible for process-to-process communication?,Network Layer,Transport Layer,Data Link Layer,Physical Layer,B
+Which protocol converts human-readable names like www.example.com into IP addresses?,DHCP,DNS,NAT,ARP,B
+What type of DNS record maps a host name to an IPv4 address?,AAAA record,A record,MX record,CNAME record,B
+What type of DNS record maps a host name to an IPv6 address?,A record,AAAA record,MX record,TXT record,B
+What type of DNS record points to a mail server?,A record,CNAME record,MX record,NS record,C
+Which layer in the TCP/IP 4-layer model corresponds to OSI Network Layer?,Link Layer,Internet Layer,Transport Layer,Application Layer,B

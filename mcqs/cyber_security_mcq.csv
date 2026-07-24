@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+What does CIA stand for in information security?,"Confidentiality, Integrity, Availability","Control, Inspection, Authentication",Cryptographic Information Architecture,Central Intelligence Agency,A
+Which core principle of security ensures information is accessible only to authorized users?,Confidentiality,Integrity,Availability,Non-repudiation,A
+Which core principle ensures that data has not been altered or tampered with in unauthorized ways?,Integrity,Confidentiality,Availability,Authentication,A
+Which core principle ensures that systems and data are operational and accessible when needed?,Availability,Integrity,Confidentiality,Authorization,A
+What type of attack involves injecting malicious SQL commands into input fields to manipulate backend databases?,SQL Injection,Cross-Site Scripting (XSS),Cross-Site Request Forgery (CSRF),Buffer Overflow,A
+What type of attack involves injecting malicious scripts into trusted websites that execute in users' browsers?,Cross-Site Scripting (XSS),SQL Injection,Man-in-the-Middle,DNS Spoofing,A
+What attack tricks an authenticated user into submitting an unauthorized request to a web application?,CSRF (Cross-Site Request Forgery),XSS,Directory Traversal,Brute Force,A
+"In Asymmetric Cryptography, which key is used to decrypt a message encrypted with a public key?",The recipient's Private Key,The sender's Public Key,The recipient's Public Key,A shared Symmetric Key,A
+"In Asymmetric Cryptography, if Alice wants to encrypt a message so ONLY Bob can read it, she uses:",Bob's Public Key,Bob's Private Key,Alice's Private Key,Alice's Public Key,A
+"If Alice wants to digitally sign a message to prove she sent it, she encrypts the signature hash using:",Alice's Private Key,Alice's Public Key,Bob's Public Key,Bob's Private Key,A
+What attack overwhelms a target server or network with flood traffic to make services unavailable?,DDoS (Distributed Denial of Service),Phishing,Man-in-the-Middle,SQL Injection,A
+What type of malware encrypts victim files and demands payment for the decryption key?,Ransomware,Spyware,Adware,Trojan,A
+What type of malware disguises itself as legitimate software to trick users into installing it?,Trojan Horse,Worm,Rootkit,Spyware,A
+What type of malware can self-replicate and spread across networks without human intervention?,Worm,Virus,Trojan,Spyware,A
+What type of malware requires a host program/file to replicate and spread when executed by a user?,Virus,Worm,Rootkit,Logic Bomb,A
+"What security model operates on the principle 'Never Trust, Always Verify'?",Zero Trust Architecture,Defense in Depth,Role-Based Access Control,Perimeter Security,A
+What security strategy uses multiple overlapping defensive layers to protect assets?,Defense in Depth,Single Point of Protection,Air-Gapping,Zero Trust,A
+Which cryptographic hash algorithm produces a 256-bit hash output?,SHA-256,MD5,SHA-1,AES-256,A
+"Which algorithm is a widely used symmetric block cipher with key lengths of 128, 192, or 256 bits?",AES,RSA,ECC,Diffie-Hellman,A
+Which asymmetric cryptographic algorithm is based on the difficulty of factoring large prime numbers?,RSA,AES,DES,SHA-256,A
+Which asymmetric cryptographic algorithm relies on elliptic curve math to offer strong security with smaller key sizes?,ECC (Elliptic Curve Cryptography),RSA,3DES,Blowfish,A
+What protocol enables secure key exchange over an insecure public channel without sending the secret directly?,Diffie-Hellman Key Exchange,RSA Encryption,AES-GCM,MD5,A
+What is social engineering in cybersecurity?,Manipulating people into performing actions or divulging confidential information,Writing automated exploits,Cracking passwords using GPUs,Intercepting Wi-Fi frames,A
+What type of attack involves sending deceptive emails pretending to be a trustworthy entity to steal credentials?,Phishing,Smishing,Vishing,Whaling,A
+What is spear phishing?,A targeted phishing attack aimed at a specific individual or organization,Phishing via SMS messages,Phishing targeting high-level executives specifically,Mass automated email spam,A
+What is whaling in social engineering?,A phishing attack specifically targeting high-profile executives or high-net-worth individuals,Phishing targeting general public,Voice phishing over phone,Wi-Fi jamming,A
+What is smishing?,Phishing attacks conducted via SMS text messages,Phishing via voice phone calls,Physical tailgating,Email spoofing,A
+What is vishing?,Social engineering attacks conducted over voice phone calls,SMS phishing,Video spoofing,SQL injection,A
+What is a Zero-Day vulnerability?,A software security flaw unknown to the software vendor with no official patch available,A vulnerability discovered 0 days before launch,A flaw fixed automatically within 24 hours,An expired certificate,A
+What is a Man-in-the-Middle (MitM) attack?,An attack where the attacker secretly relays and possibly alters communication between two parties,Flooding a server with HTTP GETs,Cracking a password file offline,Encrypting database backups,A
+Which network tool is widely used for packet analysis and packet sniffing?,Wireshark,Nmap,Metasploit,Burp Suite,A
+"Which tool is widely used for network discovery, port scanning, and vulnerability auditing?",Nmap,Wireshark,John the Ripper,Snort,A
+Which tool is a comprehensive platform for web application security testing and proxying requests?,Burp Suite,Wireshark,Nmap,Aircrack-ng,A
+Which penetration testing framework provides a vast database of known exploits and payloads?,Metasploit,Snort,Hashcat,Wireshark,A
+What type of attack uses precomputed hash tables to quickly crack password hashes?,Rainbow Table Attack,Brute Force Attack,Dictionary Attack,Birthday Attack,A
+What security technique adds random data to passwords before hashing to protect against rainbow table attacks?,Salting,Peppered Hashing,Padding,Key Stretching,A
+"What function slows down password hashing (e.g., PBKDF2, bcrypt) to make brute-force attacks harder?",Key Stretching,Salting,Truncation,Symmetric XOR,A
+"What security protocol provides encrypted communication over the web, replacing SSL?",TLS (Transport Layer Security),HTTP,FTP,SNMP,A
+Which port does HTTPS use by default?,443,80,22,8080,A
+Which port does SSH use by default?,22,23,21,25,A
+What is a firewall?,A network security device that monitors and filters incoming and outgoing network traffic based on rules,A hardware router that speeds up internet,An antivirus scanner,An encryption key manager,A
+What is a Statefully Inspection Firewall?,A firewall that tracks active network connections and state to make filtering decisions,A firewall that inspects only individual isolated packet headers,A web application proxy only,An intrusion prevention software,A
+What is a Web Application Firewall (WAF)?,"A firewall specifically filtering, monitoring, and blocking HTTP/HTTPS traffic to/from a web app",A network-level packet filter,A host antivirus tool,A DNS resolver firewall,A
+What is an IDS (Intrusion Detection System)?,A system that monitors network traffic or hosts for malicious activity and issues alerts,A system that actively blocks malicious traffic automatically,A password manager,A hardware VPN server,A
+What is an IPS (Intrusion Prevention System)?,A security system that monitors traffic and actively blocks detected threats in real-time,A system that only logs alerts without blocking,A backup storage system,A physical security door lock,A
+What is honeypot in cybersecurity?,"A decoy system set up to attract, detect, and analyze attacks by malicious actors",A high-speed firewall,A secure password vault,A master encryption key,A
+What is Multi-Factor Authentication (MFA)?,"Authentication requiring two or more independent credential categories (something you know, have, or are)",Using two passwords instead of one,Logging in from two devices simultaneously,Changing passwords every week,A
+What category of MFA factor is a fingerprint scan?,Something you are (Biometrics),Something you know,Something you have,Somewhere you are,A
+What category of MFA factor is a hardware security token or OTP app on phone?,Something you have,Something you know,Something you are,Somewhere you are,A
+What category of MFA factor is a password or PIN?,Something you know,Something you have,Something you are,Somewhere you are,A
+What attack involves systematically trying all possible character combinations to guess a password?,Brute-Force Attack,Dictionary Attack,Phishing Attack,Replay Attack,A
+What attack uses a pre-compiled list of common words or passwords to guess account credentials?,Dictionary Attack,Brute-Force Attack,Rainbow Table Attack,Man-in-the-Middle Attack,A
+What is credential stuffing?,Automated injection of stolen username/password pairs across multiple websites,Guessing default passwords on routers,Cracking SSH keys offline,Sniffing credentials in plain text,A
+What attack involves eavesdropping on a network session and retransmitting valid data packets to impersonate a client?,Replay Attack,Session Hijacking,CSRF,Cross-Site Scripting,A
+What attack occurs when an attacker takes over an active user session ID to impersonate the user?,Session Hijacking,Replay Attack,DNS Poisoning,ARP Spoofing,A
+"What attack corrupts the ARP cache on a LAN, linking the attacker's MAC address to a legitimate IP address?",ARP Spoofing / ARP Poisoning,DNS Spoofing,IP Fragmenting,MAC Flooding,A
+What attack alters records in a DNS resolver to redirect traffic to a malicious website?,DNS Cache Poisoning,ARP Spoofing,SQL Injection,BGP Hijacking,A
+What is a Buffer Overflow attack?,"Writing more data to a memory buffer than it can hold, overwriting adjacent memory space",Flooding network buffers with UDP packets,Filling disk space until system crashes,Exceeding database row limits,A
+Which memory protection mechanism marks memory regions (like stack) as non-executable to prevent buffer overflow code execution?,DEP (Data Execution Prevention) / NX bit,ASLR,Sandboxing,Canary,A
+Which security mechanism randomizes memory address locations of key data areas in a process to hinder buffer overflow exploits?,ASLR (Address Space Layout Randomization),DEP,Stack Canary,SafeSEH,A
+What value placed on stack before return address detects buffer overflow before function returns?,Stack Canary,ASLR offset,DEP bit,Nonce,A
+What is principle of least privilege (PoLP)?,Granting users/processes minimum levels of access necessary to perform their official duties,Granting full admin rights to all developers,Restricting internet access to 1 hour daily,Disabling root account permanently,A
+What is Separation of Duties (SoD)?,Dividing critical tasks among multiple people to prevent fraud and error,Separating servers physically,Dividing databases into subnets,Isolating web traffic from database traffic,A
+What is an Air-Gapped system?,A computer or network isolated physically and logically from external networks including Internet,A server cooled by air conditioners,A wireless mesh network,A cloud server behind a WAF,A
+What is a Keylogger?,Software or hardware that secretly records every keystroke typed by a user,A password generator tool,An SSH key manager,A cryptographic token,A
+What type of vulnerability allows unauthorized users to access files/directories above web root folder?,Directory Traversal / Path Traversal,File Inclusion,SQL Injection,XSS,A
+What attack tricks a web application into processing or running local/remote code files?,File Inclusion Vulnerability (LFI/RFI),SQL Injection,CSRF,Buffer Overflow,A
+What security header forces browsers to load web pages exclusively over HTTPS?,HSTS (HTTP Strict Transport Security),CSP (Content Security Policy),X-Frame-Options,X-Content-Type-Options,A
+"What security header helps restrict sources from which resources (scripts, images) can be loaded by browser?",CSP (Content Security Policy),HSTS,CORS,X-XSS-Protection,A
+What header prevents a webpage from being embedded inside an iframe to prevent clickjacking?,X-Frame-Options,HSTS,CSP,Strict-Origin,A
+What attack tricks users into clicking transparent/disguised UI elements on a webpage?,Clickjacking (UI Redressing),Phishing,Session Hijacking,XSS,A
+What is Cross-Origin Resource Sharing (CORS)?,Mechanism allowing restricted resources on a webpage to be requested from another domain outside original domain,Blocking all cross-domain requests,A browser extension for passwords,A DNS routing protocol,A
+What is Penetration Testing?,Authorized simulated cyberattack on a computer system to evaluate its security posture,Scanning disk for viruses,Cracking passwords for fun,Installing security updates automatically,A
+"In pen testing, what is 'Black Box Testing'?",Testing performed with no prior internal knowledge of system architecture or code,Testing with full knowledge of source code and network diagrams,Testing with partial internal knowledge,Testing physical server rooms,A
+"In pen testing, what is 'White Box Testing'?","Testing performed with full knowledge of source code, architecture, and network configurations",Testing with zero prior knowledge,Testing external firewalls only,Blind testing,A
+"In pen testing, what is 'Gray Box Testing'?",Testing conducted with partial knowledge of internal target systems,Testing with full access,Testing with zero access,Physical security testing,A
+What is Red Teaming in cybersecurity?,An offensive security team acting as adversaries to test organization's defensive capabilities,Defensive team monitoring SIEM alerts,Management oversight team,Auditing team checking compliance,A
+What is Blue Teaming in cybersecurity?,Defensive security personnel responsible for maintaining internal network defenses and responding to attacks,Offensive pen testers,External attackers,Software developers writing code,A
+What is Purple Teaming?,Collaborative approach where Red (Offensive) and Blue (Defensive) teams work closely together to improve security,Third-party audit team,Hardware support team,Executive board members,A
+What is SIEM stand for?,Security Information and Event Management,System Integrity and Encryption Model,Secure Internet Entry Mechanism,Server Inspection and Event Monitoring,A
+What is the primary function of a SIEM system?,"Aggregate, correlate, and analyze security log data from across an enterprise in real-time",Block web traffic directly,Store encrypted user passwords,Perform physical keycard access logs,A
+What is SOC in cybersecurity?,Security Operations Center,System Optimization Center,Secure Online Connection,Source Object Control,A
+What is CVE in vulnerability management?,Common Vulnerabilities and Exposures,Centralized Virus Elimination,Computer Verification Environment,Critical Vulnerability Engine,A
+What is CVSS used for?,Scoring severity of software vulnerabilities on a standardized scale (0 to 10),Measuring network bandwidth speed,Evaluating encryption key length,Ranking antivirus software,A
+What is a Rootkit?,Malware designed to gain root/administrative access while hiding its presence from operating system,A tool to root Android phones safely,An antivirus cleaning script,A master router configuration file,A
+What is a Logic Bomb?,Malicious code injected into software that triggers when specific conditions/dates are met,A physical explosive device,A flood of network logic packets,A syntax error in database code,A
+What is Typosquatting (URL Hijacking)?,Registering domain names closely resembling popular sites to target users who make typing errors,Hacking domain registrar servers,Modifying local hosts file,Spoofing IP packets,A
+What is Drive-by Download attack?,Unintended download of malicious software onto a user's device simply by visiting a compromised webpage,Downloading torrent files over cellular data,Bluetooth malware transfer in cars,Installing apps via USB,A
+What is a Salt in cryptography?,Random data added to input of hash function to ensure unique output hashes even for duplicate passwords,A secret key shared between two parties,A secondary password,An IV used in AES,A
+What is an Initialization Vector (IV) in block cipher modes?,A random or non-repeating value used with a secret key to ensure distinct ciphertexts even when encrypting identical plaintexts,A fixed key stored in memory,The public key in RSA,The hash output length,A
+Which cipher mode converts a block cipher into a stream cipher by generating key stream blocks using a counter?,CTR (Counter Mode),ECB (Electronic Codebook),CBC (Cipher Block Chaining),OFB,A
+Why is ECB (Electronic Codebook) mode insecure for encrypting large structured data like images?,"Identical plaintext blocks produce identical ciphertext blocks, revealing data patterns",It is too slow,It requires 4096-bit keys,It does not support AES,A
+What does HMAC stand for?,Hash-based Message Authentication Code,Header Message Access Control,Hybrid Machine Encryption Code,High-security Master Access Credential,A
+What does HMAC provide in network communication?,Both data integrity AND message authentication using a shared secret key and hash function,Confidentiality only,Public key exchange,Automatic DDoS mitigation,A
+What is Forward Secrecy (Perfect Forward Secrecy - PFS)?,Property ensuring compromise of long-term keys does not compromise past session keys,Backing up keys for future decrypts,Encrypting data twice with forward iteration,Preventing zero-day attacks,A
+What is a PKI (Public Key Infrastructure)?,"System of hardware, software, policies, and procedures to create, manage, distribute, and revoke digital certificates",A master symmetric key database,A private VPN infrastructure,A firewall architecture,A
+What is a Certificate Authority (CA)?,A trusted entity that issues digital certificates verifying identity of domain/entity,A server that routes DNS traffic,A router manufacturer,A government cybersecurity agency,A
+What standard format is widely used for public key certificates?,X.509,IEEE 802.1X,RFC 1918,ISO 27001,A
+What protocol checks real-time revocation status of an X.509 digital certificate?,OCSP (Online Certificate Status Protocol),CRL,DNSSEC,SNMP,A
+What is DNSSEC?,Suite of extension specifications adding cryptographic signatures to DNS records to prevent spoofing,A faster DNS protocol,A private DNS server,An encryption tool for web traffic,A

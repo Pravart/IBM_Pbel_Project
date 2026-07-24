@@ -1,0 +1,101 @@
+question,option_a,option_b,option_c,option_d,answer
+What is the time complexity to access an element by index in an array?,O(1),O(n),O(log n),O(n^2),A
+What is the average time complexity for searching an element in a balanced Binary Search Tree (BST)?,O(1),O(log n),O(n),O(n log n),B
+What is the worst-case time complexity of searching in an unbalanced Binary Search Tree?,O(1),O(log n),O(n),O(n log n),C
+"Which data structure follows the Last-In, First-Out (LIFO) principle?",Queue,Stack,Linked List,Tree,B
+"Which data structure follows the First-In, First-Out (FIFO) principle?",Stack,Queue,Priority Queue,Binary Search Tree,B
+Which operation inserts an element onto a Stack?,Pop,Push,Enqueue,Dequeue,B
+Which operation removes an element from a Queue?,Push,Pop,Enqueue,Dequeue,D
+What condition occurs when attempting to pop from an empty stack?,Stack Overflow,Stack Underflow,Null Pointer Exception,Segmentation Fault,B
+What condition occurs when attempting to push onto a full static stack?,Stack Underflow,Stack Overflow,Heap Exhaustion,Memory Leak,B
+What is the primary advantage of a Doubly Linked List over a Singly Linked List?,Uses less memory per node,Can be traversed in both forward and backward directions,Faster element access by index,Guarantees O(1) sorting time,B
+What is the worst-case time complexity of Quick Sort?,O(n log n),O(n),O(n^2),O(log n),C
+What is the average time complexity of Merge Sort?,O(n^2),O(n log n),O(n),O(log n),B
+Which sorting algorithm is universally considered stable and guarantees O(n log n) worst-case time complexity?,Quick Sort,Heap Sort,Merge Sort,Selection Sort,C
+What is a stable sorting algorithm?,An algorithm that preserves the relative order of elements with equal keys,An algorithm that uses O(1) auxiliary memory,An algorithm that runs in O(n) always,An algorithm that sorts elements in-place,A
+What is an in-place sorting algorithm?,An algorithm requiring O(1) or O(log n) extra memory space beyond input array,An algorithm requiring a duplicate array,An algorithm that sorts in O(n) time,An algorithm operating only on linked lists,A
+Which data structure is naturally used to implement Breadth-First Search (BFS) on a graph?,Stack,Queue,Priority Queue,Hash Table,B
+Which data structure is naturally used to implement Depth-First Search (DFS) on a graph?,Queue,Stack,Min Heap,Binary Search Tree,B
+"In a Max Heap, what is the key condition for every parent node P relative to its children C?",P.key >= C.key,P.key <= C.key,P.key == C.key,Left child key > Right child key,A
+"In a Min Heap, what is the key condition for every parent node P relative to its children C?",P.key <= C.key,P.key >= C.key,P.key == 0,Right child key < Left child key,A
+What is the time complexity to insert an element into a Binary Max Heap of size n?,O(1),O(log n),O(n),O(n log n),B
+What is the time complexity to extract the maximum element from a Max Heap of size n?,O(1),O(log n),O(n),O(n log n),B
+What is the time complexity to peek/find the minimum element in a Min Heap?,O(1),O(log n),O(n),O(n log n),A
+"What graph traversal order visits root, left subtree, then right subtree?",Inorder,Preorder,Postorder,Level-order,B
+"What graph traversal order visits left subtree, root, then right subtree?",Preorder,Inorder,Postorder,Breadth-first,B
+"What graph traversal order visits left subtree, right subtree, then root?",Inorder,Preorder,Postorder,Level-order,C
+Inorder traversal of a valid Binary Search Tree (BST) visits keys in what order?,Sorted ascending order,Sorted descending order,Random order,Level-by-level order,A
+What is an AVL Tree?,A self-balancing Binary Search Tree where height difference between left and right subtrees is at most 1,A complete binary tree stored in array,A tree where each node has up to 4 children,An unbalanced search tree,A
+What is the Balance Factor of a node in an AVL tree?,Height(Left Subtree) - Height(Right Subtree),Number of left children - Number of right children,Depth of node,Total node count,A
+Valid balance factors for nodes in an AVL Tree are:,"-1, 0, +1","-2, 0, +2","0, 1, 2",Any integer,A
+What self-balancing BST uses node color rules (Red or Black) to maintain O(log n) performance?,AVL Tree,Red-Black Tree,B-Tree,Splay Tree,B
+"In a Red-Black Tree, the root node is always what color?",Red,Black,Either Red or Black,Green,B
+Can two adjacent nodes in a Red-Black tree both be Red?,Yes,No,Only if root is red,Only at leaf level,B
+What is a Hash Table?,Data structure mapping keys to values using a hash function for fast lookups,A tree of sorted keys,A linear queue of key-value pairs,A graph representation matrix,A
+What is a hash collision in a Hash Table?,When two distinct keys produce the exact same hash index from the hash function,When hash table memory runs out,When a key is deleted,When hash value is negative,A
+What collision resolution technique links colliding elements in a chain/linked list at the bucket index?,Open Addressing,Separate Chaining,Linear Probing,Quadratic Probing,B
+What collision resolution technique searches for the next available slot within the array itself?,Separate Chaining,Open Addressing,Double Hashing,External Hashing,B
+"In Open Addressing, what is Linear Probing?","Probing consecutive slots sequentially (index + 1, index + 2, ...) until an open slot is found","Probing quadratic offsets (index + 1^2, index + 2^2, ...)",Using a secondary hash function,Building a binary tree at slot,A
+"What is the average-case time complexity of search, insert, and delete in a Hash Table?",O(1),O(log n),O(n),O(n^2),A
+What is the worst-case time complexity of search in a Hash Table (when all keys collide into 1 bucket)?,O(1),O(log n),O(n),O(n^2),C
+What is Load Factor in a Hash Table?,Ratio of number of stored entries (n) to total bucket capacity (k),Ratio of hash collisions to total keys,Number of array re-sizes,Maximum key length,A
+What dynamic data structure represents a graph using a 2D array of size V x V?,Adjacency List,Adjacency Matrix,Edge List,Incidence List,B
+What is space complexity of Adjacency Matrix representation for a graph with V vertices and E edges?,O(V + E),O(V^2),O(E^2),O(V * E),B
+What is space complexity of Adjacency List representation for a graph with V vertices and E edges?,O(V + E),O(V^2),O(E^2),O(V log E),A
+Which algorithm finds single-source shortest paths in a weighted graph with non-negative edge weights?,Dijkstra's Algorithm,Bellman-Ford Algorithm,Floyd-Warshall Algorithm,Kruskal's Algorithm,A
+Which algorithm finds single-source shortest paths in a graph that may contain negative edge weights?,Dijkstra's Algorithm,Bellman-Ford Algorithm,Prim's Algorithm,Kahn's Algorithm,B
+Which algorithm can detect negative weight cycles in a directed graph?,Dijkstra's Algorithm,Bellman-Ford Algorithm,BFS,DFS,B
+Which algorithm computes all-pairs shortest paths in a weighted graph?,Floyd-Warshall Algorithm,Dijkstra's Algorithm,Prim's Algorithm,Kruskal's Algorithm,A
+What is time complexity of Floyd-Warshall algorithm for a graph with V vertices?,O(V^2),O(V^3),O(V log V),O(V + E),B
+What is a Minimum Spanning Tree (MST)?,A subset of edges connecting all vertices in connected weighted graph with minimum total edge weight and no cycles,Shortest path between two nodes,A tree with maximum edge weights,A directed acyclic graph,A
+Which greedy algorithm finds MST by continually adding the lowest-weight edge that does not form a cycle?,Kruskal's Algorithm,Prim's Algorithm,Dijkstra's Algorithm,Bellman-Ford Algorithm,A
+"Which greedy algorithm finds MST by growing a tree from an arbitrary starting vertex, adding cheapest edge to unvisited vertex?",Prim's Algorithm,Kruskal's Algorithm,Floyd-Warshall,Tarjan's Algorithm,A
+What data structure is used by Kruskal's algorithm to efficiently detect cycles?,Disjoint Set Union (DSU) / Union-Find,Stack,Queue,Hash Map,A
+What are the two key optimization techniques in Disjoint Set Union (DSU)?,Path Compression and Union by Rank / Size,Linear Probing and Chaining,Rotations and Rebalancing,Memoization and Tabulation,A
+What is Topological Sort on a graph?,"Linear ordering of vertices in Directed Acyclic Graph (DAG) such that for every directed edge u -> v, u comes before v",Sorting vertices by degree,BFS traversal on undirected graph,Sorting edge weights in ascending order,A
+Topological Sorting can ONLY be performed on which type of graph?,Directed Acyclic Graph (DAG),Undirected Graph with cycles,Complete Bipartite Graph,Weighted Tree with negative edges,A
+Which algorithm uses in-degrees of nodes to produce a Topological Sort (Kahn's Algorithm)?,BFS-based algorithm using Queue,DFS-based algorithm using Stack only,Dijkstra's Shortest Path,Prim's MST,A
+What is a Trie (Prefix Tree)?,Tree-based data structure used to store associative keys (typically strings) efficiently for prefix lookups,A binary heap variation,A self-balancing search tree,A graph without cycles,A
+What is time complexity to search for a word of length L in a Trie?,O(L),O(n),O(log n),O(L log n),A
+What is a Segment Tree used for?,"Performing range queries (e.g. range sum, min, max) and point updates on array in O(log n) time",Sorting array in-place,Hashing string keys,Traversing graph in BFS order,A
+What is time complexity to build a Segment Tree for an array of size n?,O(n),O(n log n),O(n^2),O(log n),A
+What is a Fenwick Tree (Binary Indexed Tree - BIT)?,Data structure supporting dynamic prefix sum queries and point updates in O(log n) time,A binary search tree with red/black nodes,A max heap variant,A B-Tree index structure,A
+What is a Complete Binary Tree?,"A binary tree in which every level, except possibly last, is completely filled, and all nodes are as far left as possible",A tree where every node has 0 or 2 children,A tree where all leaves are at same depth,An unbalanced search tree,A
+What is a Full Binary Tree?,A binary tree where every node has either 0 or 2 children,A tree where all leaves are at same level,A complete binary tree,A tree with height log n,A
+What is a Perfect Binary Tree?,A binary tree in which all interior nodes have two children and all leaf nodes are at the same depth,A tree with 1 child per node,A max heap tree,An AVL tree,A
+How many nodes does a Perfect Binary Tree of height h have (root at height 0)?,2^(h+1) - 1,2^h,2^(h-1),h^2,A
+"If a complete binary tree is stored in an array (0-indexed), where is left child of node at index i?",2i + 1,2i + 2,(i - 1) / 2,i + 1,A
+"In a 0-indexed array heap, where is right child of node at index i?",2i + 2,2i + 1,(i - 1) / 2,i + 2,A
+"In a 0-indexed array heap, where is parent of node at index i?",(i - 1) / 2,2i,i / 2,2i + 1,A
+What is space complexity of Depth-First Search (DFS) on a graph/tree?,O(H) where H is maximum height/depth of recursion stack,O(V^2),O(1) always,O(E^2),A
+What is time complexity of Binary Search on a sorted array of size n?,O(log n),O(1),O(n),O(n log n),A
+What is precondition required before performing Binary Search on an array?,Array must be sorted,Array must contain unique elements only,Array size must be power of 2,Array must be implemented as linked list,A
+What is time complexity of Insertion Sort in best case (already sorted array)?,O(n),O(1),O(n log n),O(n^2),A
+What is time complexity of Bubble Sort in worst case?,O(n^2),O(n log n),O(n),O(log n),A
+What is Selection Sort algorithm strategy?,Repeatedly find minimum element from unsorted portion and swap it into sorted portion,Compare adjacent elements and swap if out of order,Divide array into halves and recursively sort,Insert elements one by one into sorted queue,A
+What is worst-case time complexity of Selection Sort?,O(n^2),O(n log n),O(n),O(log n),A
+Is Selection Sort a stable sorting algorithm by default on arrays?,No,Yes,Only for positive integers,Only for small arrays,A
+What is worst-case time complexity of Heap Sort?,O(n log n),O(n^2),O(n),O(log n),A
+What non-comparison sorting algorithm sorts integers by grouping keys by individual digits?,Radix Sort,Quick Sort,Merge Sort,Heap Sort,A
+What non-comparison sorting algorithm counts occurrences of each unique value in array?,Counting Sort,Bucket Sort,Quick Sort,Shell Sort,A
+What is time complexity of Counting Sort for n elements with maximum key value k?,O(n + k),O(n log k),O(n * k),O(n^2),A
+What is a Priority Queue?,"Abstract data type where each element has a priority, and element with highest priority is served first",A FIFO queue,A LIFO stack,An unordered set,A
+What underlying data structure is most commonly used to implement a Priority Queue?,Binary Heap,Unsorted Array,Singly Linked List,Queue,A
+What is a Circular Queue?,"Linear queue where last position is connected back to first position to make a circle, preventing space waste",Queue implemented using stack,Queue where elements are sorted,Priority queue variant,A
+What is a Deque (Double-Ended Queue)?,Queue allowing insertion and deletion at both front and rear ends,Queue operating only in reverse,Queue with fixed capacity 2,Queue stored on disk,A
+"What is dynamic array (e.g., std::vector in C++, ArrayList in Java)?","Array that resizes automatically when capacity is reached, offering amortized O(1) push_back",Array stored in static RAM,Linked list disguised as array,Fixed-size stack frame array,A
+What is amortized time complexity of appending an element to dynamic array?,Amortized O(1),Strict O(n) always,O(log n),O(n^2),A
+What is a Skip List?,Probabilistic data structure built upon linked lists using multiple layers of forward pointers for O(log n) lookups,A list that skips odd index nodes,A circular doubly linked list,A heap implemented via pointers,A
+What is a Splay Tree?,Self-adjusting Binary Search Tree where recently accessed elements are accessed fast near root using rotations,An unbalanced AVL tree,A tree with B-Tree nodes,A red-black tree variant,A
+What is a B-Tree?,"Self-balancing m-way search tree optimized for systems that read/write large blocks of memory (e.g., databases)",A binary tree with black nodes,A breadth-first tree,A tree stored in CPU registers,A
+What is a B+ Tree?,"B-Tree variation where all data records are stored in leaf nodes, and leaf nodes are linked sequentially",B-Tree with positive keys only,Binary tree with height log n,Balanced red-black tree,A
+What is a Disjoint-Set Union (DSU) Find operation time complexity with path compression?,Nearly O(1) (Amortized inverse Ackermann function α(n)),O(log n),O(n),O(n log n),A
+What is a Bloom Filter?,Space-efficient probabilistic data structure used to test whether an element is a member of a set (allows false positives),Filter for removing corrupt pointers,Data structure for exact key search in O(1),A sorting network,A
+Can a Bloom Filter produce False Negatives (claiming an item is absent when it is present)?,"No, never","Yes, frequently",Only when full,Only if hash is negative,A
+Can a Bloom Filter produce False Positives (claiming an item is present when it is absent)?,Yes,No,Only if table size is 0,Only for string keys,A
+What is Expression Tree?,Binary tree in which internal nodes are operators and leaf nodes are operands,Tree representing file paths,Tree of dynamic statements,A B-Tree variation,A
+Infix expression 'A + B * C' converted to Postfix (Reverse Polish Notation) is:,A B C * +,+ A * B C,A B + C *,* + A B C,A
+Postfix expression evaluation is naturally implemented using which data structure?,Stack,Queue,Max Heap,Binary Search Tree,A
+What is Monotonic Stack?,"Stack whose elements are always strictly increasing or decreasing, used for next greater element problems in O(n)",Stack with fixed size,Stack using 2 queues,Stack stored in constant memory,A
+What is Sparse Matrix?,Matrix in which majority of elements are zero,Matrix with no rows,Matrix containing floating numbers only,Matrix stored on SSD,A
+"Which representation efficient for Sparse Matrix stores non-zero elements as (Row, Column, Value) triplets?",Coordinate List (COO) / Compressed Sparse Row (CSR),Full 2D Array,Adjacency Matrix,Binary Tree,A
