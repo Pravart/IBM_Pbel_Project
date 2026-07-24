@@ -13,7 +13,20 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 # Load Environment Variables
 # ==========================================
 load_dotenv()
-api_key = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+
+# Load API key
+api_key = os.getenv("GEMINI_API_KEY")
+
+try:
+    api_key = st.secrets["GEMINI_API_KEY"]
+except Exception:
+    pass
+
+if not api_key:
+    st.error("GEMINI_API_KEY not found!")
+    st.stop()
+
+# Gemini client
 client = genai.Client(api_key=api_key)
 
 # ==========================================
@@ -22,7 +35,7 @@ client = genai.Client(api_key=api_key)
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/gemini-embedding-001",
-    google_api_key=os.getenv("GEMINI_API_KEY")
+    google_api_key=api_key
 )
 vector_db = FAISS.load_local(
     "faiss_index",
