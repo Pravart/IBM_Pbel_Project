@@ -35,8 +35,7 @@ client = genai.Client(api_key=api_key)
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/gemini-embedding-001",
-    google_api_key=api_key
-)
+    google_api_key=api_key)
 vector_db = FAISS.load_local(
     "faiss_index",
     embeddings,
